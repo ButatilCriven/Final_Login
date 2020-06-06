@@ -4,13 +4,17 @@ body{
     padding: 0px;
     background: white;
     background-image: url("wp.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-blend-mode: normal;
     height: 100vh;
+   }
+   .container-fluid{
+       width: 100%;
    }
    .center{
     width: 430px;
     margin: 130px auto;
+    /* margin: 0 auto; */
     position: relative;
    }
    .center .header{
@@ -93,5 +97,16 @@ body{
     .form{
         display: none;
         visibility: hidden;
+    }
+    .container-fluid{
+        padding: 0 50px !important;
+    }
+    .center{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .container-fluid{
+        padding: 0 20px !important;
     }
 }
